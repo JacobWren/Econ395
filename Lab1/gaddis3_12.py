@@ -6,7 +6,8 @@ disc_10_to_19 = .1
 disc_20_to_49 = .2
 disc_50_to_99 = .3
 disc_100_plus = .4
-#if elif else statements
+
+
 def calculate_total_cost(purchase_count):
     if 9 < purchase_count < 20:
         discount_amount = RETAIL_PRICE * purchase_count * disc_10_to_19
@@ -18,9 +19,9 @@ def calculate_total_cost(purchase_count):
         discount_amount = RETAIL_PRICE * purchase_count * disc_100_plus
     else: 
         discount_amount = 0
-    #Total cost less the discount if any
+    # Total cost less the discount if any
     total_puchase_after_disc = (RETAIL_PRICE * purchase_count) - discount_amount
-    #round to nearest cent
+    # round to nearest cent
     total_puchase_after_disc = round(total_puchase_after_disc,2)
     discount_amount = round(discount_amount,2)
     
