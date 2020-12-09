@@ -10,7 +10,7 @@ popular_boy_names = boy_input.readlines()
 # create an empty list. We will fill this list up with strings as its elements
 b = []
 # Strip trailing '\n' from all elements of the list.
-#rstrip is a method of the strings object
+# rstrip is a method of the strings object
 for i in range(len(popular_boy_names)):
     b.append(popular_boy_names[i].rstrip('\n'))
 
@@ -24,7 +24,7 @@ popular_girl_names = girl_input.readlines()
 # create an empty list. We will fill this list up with strings as its elements
 g = []
 # Strip trailing '\n' from all elements of the list.
-#rstrip is a method of the strings object
+# rstrip is a method of the strings object
 for i in range(len(popular_boy_names)):
     g.append(popular_girl_names[i].rstrip('\n'))
 
@@ -35,6 +35,7 @@ def is_popular_boys_name(name):
     else:
         return False
 
+    
 def is_popular_girls_name(name):
     if name in g:
         return True
