@@ -1,18 +1,13 @@
-# Question: Why define class CDDemandException if it is never called?
-
 # Part I: Define global vars, which are the prices
 P_X = 10
 P_Y = 20
 
 # Define the class Cobb Douglas demand
 
-# This is an empty class. Don't know why we defined it. It is never called.
-class CDDemandException(Exception): pass
-
 
 class CDDemand:
     # these are the attributes. We want the attributes to initiliaze when we
-    #call the class automatically (and they do!).
+    # call the class automatically (and they do!).
     def __init__(self, beta, income, ssn):
         # self is a place holder for when we instantiate the class!
         # For example, try vera (see below)
@@ -30,5 +25,5 @@ class CDDemand:
         return ((self.beta)/(self.beta+(1-self.beta))) * (self.income/P_Y)
 
 
-# Test out your CDDemand class by instantiating a few instances of it. But this does not need to be in your code. 
-#vera = CDDemand(0.2, 100000, 123345611)
+# Test out your CDDemand class by instantiating a few instances of it.  
+# vera = CDDemand(0.2, 100000, 123345611)
